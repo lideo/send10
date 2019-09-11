@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <form action="/charge" method="post" id="payment-form">
+        <div class="info">
+            <ul>
+                <li><strong>Card number:</strong> 4242 4242 4242 4242</li>
+                <li><strong>MM/YY:</strong> 10/28</li>
+                <li><strong>CVC:</strong> 123</li>
+                <li><strong>ZIP:</strong> 12345</li>
+            </ul>
+        </div>
+        <div class="form-row">
+            <label for="card-element">
+                Credit or debit card
+            </label>
+            <div id="card-element">
+                <!-- A Stripe Element will be inserted here. -->
+            </div>
+
+            <!-- Used to display form errors. -->
+            <div id="card-errors" class="errors" role="alert"></div>
+        </div>
+
+        <button>Submit Payment</button>
+    </form>
+
+{% endblock %}
