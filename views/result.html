@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="result-container">
+        <h1>{{ message }}</h1>
+        <p>You will be redirected to the home page in a few seconds.</p>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/javascripts/redirect.js"></script>
+{% endblock %}
